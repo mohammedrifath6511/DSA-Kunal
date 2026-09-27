@@ -9,6 +9,7 @@ public class Employee {
 	private String name;
 	private String department;
 	private double salary;
+	private boolean formal;
 	
 	public int getId() {
 		return id;
@@ -34,14 +35,19 @@ public class Employee {
 	public void setSalary(double salary) {
 		this.salary = salary;
 	}
-	
-	
-	public Employee(int id, String name, String department, double salary) {
+	public boolean isFormal() {
+		return formal;
+	}
+	public void setFormal(boolean formal) {
+		this.formal = formal;
+	}
+	public Employee(int id, String name, String department, double salary, boolean formal) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.department = department;
 		this.salary = salary;
+		this.formal = formal;
 	}
 
 }
